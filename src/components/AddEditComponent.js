@@ -1,16 +1,15 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-
 import initialFields from './config';
 import { v4 as uuid } from 'uuid';
  function AddEditComponent(props) {
-    
     const [isEditFlag, setEditFlag] = useState(false)
     const [fields,setFields] = useState(
         initialFields
     )
    const  [isError, setError] = useState(false)
+
     useEffect(()=>{
       if(props.isEditFlag){
         setEditFlag(true)
@@ -31,7 +30,7 @@ import { v4 as uuid } from 'uuid';
     }
  },[ !!isEditFlag])
 
-    //save & update
+    //save & update 
     const _handleSubmit=()=>{
       //validation logic start
       let error = false
