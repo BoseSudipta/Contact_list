@@ -30,7 +30,7 @@ import { v4 as uuid } from 'uuid';
     }
  },[ !!isEditFlag])
 
-    //save & update 
+    //save & update functionality
     const _handleSubmit=()=>{
       //validation logic start
       let error = false
@@ -58,10 +58,11 @@ import { v4 as uuid } from 'uuid';
     })
     .catch((error)=>{
         // setError(true)
-    })
-  }
+      })
+     }
     }
 
+    //This function's use is to help to enter value in the input field
     const _handleChange=(e)=>{
         if(e.target.name === 'email'){
           setFields({...fields,[e.target.name]:e.target.value})

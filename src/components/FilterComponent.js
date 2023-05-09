@@ -6,6 +6,7 @@ function FilterComponent  (props) {
       props.parentCallback(val);
       e.preventDefault();
       }
+      //input field for filter functionality
     const Input = styled.input.attrs(props => ({
         type: "text",
         size: props.small ? 5 : undefined
