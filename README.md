@@ -1,4 +1,4 @@
-Sure, here's a sample README file for your React application:
+README file for your React application:
 
 # Contact List App
 
@@ -57,4 +57,3 @@ The main components of the app are:
 - ContactList: The main component that displays the contact list and handles filtering, editing, and deleting contacts.
 - AddEditComponent: This component is useful for save and update
 - FilterComponent: This component use for filtering contact
-- 
